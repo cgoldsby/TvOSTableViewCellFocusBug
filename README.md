@@ -8,9 +8,9 @@ It does not matter what affine transformation is being applied: scale will have 
 I did discover the following thread on Apple Developer forums but it's proposed solution did not work:
 https://forums.developer.apple.com/thread/48813
 
-![bug pic](images/TvOSTableViewCellFocusBug.png)
+![bug pic](images/tvosTableViewCellFocusBug.png)
 
-![bug gif](images/TvOSTableViewCellFocusBug.gif)
+![bug gif](images/tvosTableViewCellFocusBug.gif)
 
 ### Steps to Reproduce:
 1) Run the demo app: https://github.com/cgoldsby/TvOSTableViewCellFocusBug
@@ -44,10 +44,12 @@ override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITa
 
 ### Expected Results:
 ✅ When the cell is focused the scale transformation is applied and the cell appears larger.
+
 ✅ When the cell is unfocused the identity transformation is applied and the cell returns to its original size.
 
 ### Actual Results:
 ✅ When the cell is focused the scale transformation is applied and the cell appears larger.
+
 ❌ When the cell is unfocused the identity transformation is not applied and the cell size is incorrect.
 
 ### Version/Build:
