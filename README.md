@@ -1,3 +1,4 @@
+## 	[rdar://45403264](https://openradar.appspot.com/radar?id=4976582573686784)
 ## UITableViewCell with custom focus style has incorrect width after scrolling fast
 
 ### Summary:
